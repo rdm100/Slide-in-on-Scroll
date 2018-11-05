@@ -49,10 +49,10 @@
         console.count(e);
         console.log(e);
         console.log(window.scrollY);
-        sliderImages.forEach(slideImage => {
-            const slideInAt = (window.scrollY + window.innerHeight) - slideImage.height / 2;
+        sliderImages.forEach(sliderImage => {
+            const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
             console.log(slideInAt);
-            
+            const imageBottom = sliderImage.offsetTop + sliderImage.height;
         })
     }
 
