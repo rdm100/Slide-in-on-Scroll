@@ -53,6 +53,7 @@
             const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
             console.log(slideInAt);
             const imageBottom = sliderImage.offsetTop + sliderImage.height;
+            const isNotScrolledPast = window.scrollY < imageBottom;
         })
     }
 
